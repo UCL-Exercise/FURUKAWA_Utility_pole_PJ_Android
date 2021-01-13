@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <RelativeLayout
+            android:id="@+id/title_area"
+            android:layout_marginTop="@dimen/margin_editText_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="@string/report_title"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/title_text_size" />
+
+            <TextView
+                android:id="@+id/must_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_title"
+                android:text="@string/must_enter"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/title_text_size" />
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editText_height"
+                android:layout_marginLeft="@dimen/edit_margin_left"
+                android:layout_marginRight="@dimen/margin_left"
+                android:layout_marginTop="@dimen/margin_editText_top"
+                android:layout_below="@+id/must_enter"
+                android:background="@drawable/textview_border"
+                android:maxLength="40"
+                />
+            <TextView
+                android:id="@+id/comment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_title"
+                android:layout_alignLeft="@+id/text_title"
+                android:layout_marginTop="@dimen/margin_Top"
+                android:text="@string/comment"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/title_text_size" />
+            <EditText
+                android:id="@+id/edit_comment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editText_height"
+                android:layout_marginLeft="@dimen/edit_margin_left"
+                android:layout_marginRight="@dimen/margin_left"
+                android:layout_marginTop="@dimen/margin_editText_top"
+                android:layout_below="@+id/comment_title"
+                android:background="@drawable/textview_border"
+                android:maxLength="40"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+            android:id="@+id/take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/button_photo"
+            />
+            <Button
+                android:id="@+id/go_back"
+                android:layout_marginTop="@dimen/margin_button_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/take_photo"
+                android:text="@string/go_back"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

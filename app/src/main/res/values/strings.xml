@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FURUKAWA_Utility_pole_PJ</string>
+    <string name="report_list">一覧</string>
+    <string name="new_report">新規</string>
+    <string name="report_title">タイトル</string>
+    <string name="must_enter">&lt;必須&gt;</string>
+    <string name="comment">コメント</string>
+    <string name="button_photo">撮影へ</string>
+    <string name="go_back">戻る</string>
+</resources>
