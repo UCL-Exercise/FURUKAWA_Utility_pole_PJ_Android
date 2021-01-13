@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 public class NewReportActivity extends AppCompatActivity {
-    Button go_back_botton;
-    Button take_media_button;
+    private Button go_back_botton;
+    private Button take_media_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +27,7 @@ public class NewReportActivity extends AppCompatActivity {
                 Intent go_back_to_StartupActivity=new Intent(NewReportActivity.this,StartupActivity.class);
                 startActivity(go_back_to_StartupActivity);
                 finish();
+
             }
         });
     }

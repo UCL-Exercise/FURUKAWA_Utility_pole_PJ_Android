@@ -7,4 +7,6 @@
     <string name="comment">コメント</string>
     <string name="button_photo">撮影へ</string>
     <string name="go_back">戻る</string>
+    <string name="start_taking_picture">撮影開始</string>
+    <string name="taking_picture">・・・撮影中・・・</string>
 </resources>

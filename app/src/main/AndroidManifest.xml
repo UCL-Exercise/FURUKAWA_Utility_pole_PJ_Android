@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewReportActivity"></activity>
+        <activity android:name=".PreviewActivity"></activity>
+        <activity android:name=".NewReportActivity" />
         <activity android:name=".TopPageActivity" />
         <activity android:name=".StartupActivity" />
         <activity android:name=".MainActivity">
