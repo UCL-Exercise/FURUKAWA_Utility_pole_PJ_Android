@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="furukawa.Up.PJ">
-
+    package="furukawa.Up.activity">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,11 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PreviewActivity"></activity>
-        <activity android:name=".NewReportActivity" />
-        <activity android:name=".TopPageActivity" />
-        <activity android:name=".StartupActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="furukawa.Up.activity.PreviewActivity"></activity>
+
+        <activity android:name="furukawa.Up.activity.NewReportActivity" />
+        <activity android:name="furukawa.Up.activity.TopPageActivity" />
+        <activity android:name="furukawa.Up.activity.StartupActivity" />
+        <activity android:name="furukawa.Up.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

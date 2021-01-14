@@ -1,4 +1,4 @@
-package furukawa.Up.PJ;
+package furukawa.Up.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,14 +16,7 @@ public class StartupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_startup);
         initView();
-        new_report_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent go_to_NewReportActivity=new Intent(StartupActivity.this,NewReportActivity.class);
-                startActivity(go_to_NewReportActivity);
-                finish();
-            }
-        });
+        new_report_btn.setOnClickListener(new_report_OnClickListener);
         report_list_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,4 +28,12 @@ public class StartupActivity extends AppCompatActivity {
         new_report_btn=findViewById(R.id.new_report_btn);
         report_list_btn=findViewById(R.id.report_list_btn);
     }
+    View.OnClickListener new_report_OnClickListener=new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent go_to_NewReportActivity=new Intent(StartupActivity.this,NewReportActivity.class);
+            startActivity(go_to_NewReportActivity);
+            finish();
+        }
+    };
 }

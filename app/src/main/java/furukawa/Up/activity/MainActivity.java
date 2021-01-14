@@ -1,4 +1,4 @@
-package furukawa.Up.PJ;
+package furukawa.Up.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
